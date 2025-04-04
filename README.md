@@ -1,74 +1,130 @@
-# AMUST Library Management System
+# 📚 AMUST Library Management System  
 
-## 📖 Introduction
-The **AMUST Library Management System** is a simple Python-based application that allows students to interact with a digital library. The system provides functionalities for user authentication, viewing available books, borrowing books, and returning books.
-
-## 🛠 Features
-- **Student Login Verification**: Users must enter their name and ID for authentication.
-- **View Available Books**: Displays a list of all books currently available.
-- **Borrow Books**: Allows users to borrow books if they are available.
-- **Return Books**: Users can return books to the library.
-- **Exit System**: Users can exit the application when they are done.
-
-## 🚀 How It Works
-1. The program starts with a welcome message and prompts the user to log in.
-2. The user selects one of the four options:
-   - View available books
-   - Borrow a book
-   - Return a book
-   - Exit the system
-3. The system processes the user’s request accordingly and updates the book inventory.
-4. If a user borrows a book, it is removed from the available books list.
-5. If a user returns a book, it is added back to the available books list.
-6. The system continues running in a loop until the user chooses to exit.
-
-## 📌 Installation & Usage
-### Prerequisites
-- Python 3.x
-- pandas module (`pip install pandas`)
-
-### Running the Application
-1. Clone or download the script.
-2. Open a terminal and navigate to the script's directory.
-3. Run the script using:
-   ```sh
-   python library_manager.py
-   ```
-4. Follow the on-screen instructions to interact with the library system.
-
-## 📋 Code Overview
-The program consists of the following key components:
-- **Student Database**: A DataFrame containing student names and IDs.
-- **LibraryManager Class**:
-  - `StdLogin()`: Handles student verification.
-  - `Available_books()`: Displays all available books.
-  - `borrow_books(bookName)`: Allows students to borrow books.
-  - `return_books(bookName)`: Returns books to the library.
-
-## 📝 Example Usage
-```
-😎----Welcome to AMUST Library----😎
-😕----Enter your name and login id for verification----😕
-Enter your name: Fahim
-Enter your id: 1
----verification successful---
-===Welcome to AMUST Library===
-1.---Available_books---.
-2.---Borrow_books---.
-3.---Returning_books---.
-4.---Exit---.
-Enter your choice: 1
-```
-
-## 🏆 Contributors
-- Developed by **Md. Rafshan Jani**
-
-## 📜 License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🤝 Contributions
-Feel free to fork the repository and improve the system by adding new features or fixing bugs!
+![Library Banner](https://via.placeholder.com/1200x400/4B6E97/FFFFFF?text=AMUST+Library+Management+System)  
+*A modern, user-friendly library management system powered by Streamlit and machine learning.*  
 
 ---
-Happy Coding! 😊📚
 
+## 🚀 **Features**  
+
+✨ **Department-wise Book Browsing** – Easily filter books by department.  
+📖 **Borrow & Return System** – Track book loans with student details.  
+🤖 **AI-Powered Recommendations** – Get personalized book suggestions using **TF-IDF & Cosine Similarity**.  
+📊 **Real-time Updates** – See currently borrowed books in the sidebar.  
+🔍 **Search & Explore** – View all available books at a glance.  
+
+---
+
+## 🛠 **Tech Stack**  
+
+| **Category**       | **Technologies Used** |
+|--------------------|----------------------|
+| **Frontend**       | Streamlit 🎈          |
+| **Backend**        | Python 🐍            |
+| **Data Processing**| Pandas 🏷️            |
+| **ML for Recommendations** | Scikit-learn (TF-IDF, Cosine Similarity) 🤖 |
+| **Data Storage**   | CSV (Pandas) 📂      |
+
+---
+
+## ⚙️ **Installation & Setup**  
+
+### **1. Clone the Repository**  
+```bash
+git clone https://github.com/yourusername/amust-library.git
+cd amust-library
+```
+
+### **2. Install Dependencies**  
+```bash
+pip install -r requirements.txt
+```
+*(Sample `requirements.txt`)*:  
+```
+streamlit
+pandas
+scikit-learn
+```
+
+### **3. Run the App**  
+```bash
+streamlit run app.py
+```
+The app will open in your browser at `http://localhost:8501`.  
+
+---
+
+## 📂 **File Structure**  
+
+```
+📁 amust-library/
+├── 📄 app.py               # Main Streamlit application
+├── 📄 engineering_books_filtered.csv  # Sample book database
+├── 📄 borrowed_books.csv   # Tracks borrowed books
+└── 📄 README.md            # This file
+```
+
+---
+
+## 🎨 **How It Works**  
+
+### **1. View Books by Department**  
+- Select a department to see available books.  
+
+### **2. Borrow a Book**  
+- Enter student details and choose a book.  
+- The system updates availability in real time.  
+
+### **3. Return a Book**  
+- Enter student ID and select the book to return.  
+
+### **4. Get AI Recommendations**  
+- Select a book you like, and the system suggests similar books.  
+
+### **5. View All Books**  
+- Browse the entire library collection.  
+
+---
+
+## 📊 **Screenshots**  
+
+| **Department View** | **Borrow System** |
+|---------------------|------------------|
+| ![Department View](https://via.placeholder.com/400x250/4B6E97/FFFFFF?text=Department+View) | ![Borrow System](https://via.placeholder.com/400x250/4B6E97/FFFFFF?text=Borrow+Book) |
+
+| **AI Recommendations** | **Borrowed Books Log** |
+|-----------------------|-----------------------|
+| ![Recommendations](https://via.placeholder.com/400x250/4B6E97/FFFFFF?text=AI+Recommendations) | ![Borrowed Log](https://via.placeholder.com/400x250/4B6E97/FFFFFF?text=Borrowed+Books) |
+
+---
+
+## 🤝 **Contributing**  
+
+Want to improve this project?  
+1. **Fork** the repository.  
+2. Create a new branch (`git checkout -b feature/your-feature`).  
+3. **Commit** your changes (`git commit -m "Add new feature"`).  
+4. **Push** to the branch (`git push origin feature/your-feature`).  
+5. Open a **Pull Request**.  
+
+---
+
+## 📜 **License**  
+
+This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for details.  
+
+---
+
+## 🌟 **Credits**  
+
+- Developed with ❤️ by **Rafshan Jani**  
+- Powered by **Streamlit & Scikit-learn**  
+
+---
+
+### 🔗 **Live Demo**  
+👉 [Try it out!](#) *(Coming soon!)*  
+
+---
+
+**Happy Reading!** 📖✨
